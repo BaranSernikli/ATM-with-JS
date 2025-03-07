@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Uygulaması</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="atm-container">
+        <h2>ATM Uygulaması</h2>
+        <div class="balance">
+            <p>Bakiye: <span id="balance">1000</span>₺</p>
+        </div>
+
+        <div class="actions">
+            <button onclick="paraYatir()">Para Yatır</button>
+            <button onclick="paraCek()">Para Çek</button>
+        </div>
+
+        <div class="input-container">
+            <label for="amount">Tutar:</label>
+            <input type="number" id="amount" placeholder="Tutar girin">
+        </div>
+
+        <div class="message">
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
